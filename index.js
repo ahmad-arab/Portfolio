@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const progressBar = document.getElementById('progress-bar');
-    const percentageValue = document.getElementById('percentage-value');
-    const targetPercentage = 75; // Set the target percentage here
+    let progressBars = Array.from(document.getElementsByClassName('progress-bar'));
+    let percentageValues = Array.from(document.getElementsByClassName('percentage-value'));
 
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
@@ -14,12 +13,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function onScroll() {
-        if (isElementInViewport(progressBar)) {
-            progressBar.style.width = `${targetPercentage}%`;
-            percentageValue.innerText = `${targetPercentage}%`;
-            window.removeEventListener('scroll', onScroll);
-        }
+
+        progressBars = progressBars.filter(element => {
+            if (isElementInViewport(element)) {
+                var targetPercentage = element.getAttribute('data-percentage');
+                element.style.width = `${targetPercentage}%`;
+                return false;
+            }
+            return true;
+        });
+
+        percentageValues = percentageValues.filter(element => {
+            if (isElementInViewport(element)) {
+                var targetPercentage = element.getAttribute('data-percentage');
+                element.innerText = `${targetPercentage}%`;
+                return false;
+            }
+            return true;
+        });
     }
 
     window.addEventListener('scroll', onScroll);
+
+    // Initial check in case elements are already in view
+    onScroll();
 });

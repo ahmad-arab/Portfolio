@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmad Arab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body style="padding: 0;margin: 0;width: 100%;">  
     <div style="position: fixed;top: 0;left: 0;z-index: -1;overflow: hidden;">
-        <img src="Images/coding.jpeg" style="z-index: -1;max-width: 75%;"/>
+        <img src="Images/coding.jpg" style="z-index: -1;max-width: 75%;"/>
     </div> 
-    <header style="position: relative;width: 100%; height: 110vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.3);">
+    <header id="hero" style="position: relative;width: 100%; height: 110vh;overflow: hidden;background-color: rgba(0, 0, 25, 0.45);">
         <div style="display: flex; width: 100%; height: 100%;top: 0;left: 0;overflow: hidden;position: absolute;">    
                        
             <div style="flex: 3;display: flex;flex-direction: column;">
-                <div style="width: 100%;background-color: #5569dc;height: 5rem;display: flex;justify-content: center;align-items: center;color: white;">
-                    <a href="#about" style="margin: 1rem;"> <label>About</label></a>
-                    <a href="#education" style="margin: 1rem;"><label>Education</label></a>
-                    <a href="#experience" style="margin: 1rem;"><label>Experience</label></a>
-                    <a style="margin: 1rem;"><label>Skills & Languages</label></a>
-                    <a style="margin: 1rem;"><label>Projects</label></a>
+                <div class="playfair-display-italic-400 font-size-large" style="width: 100%;background-color: #5569dc;height: 5rem;display: flex;justify-content: center;align-items: center;color: white;">
+                    <a href="#about" style="margin: 1rem;">About</a>
+                    <a href="#education" style="margin: 1rem;">Education</a>
+                    <a href="#experience" style="margin: 1rem;">Experience</a>
+                    <a href="#SkillsAndLanguages" style="margin: 1rem;">Skills & Languages</a>
+                    <a href="#projects" style="margin: 1rem;">Projects</a>
                 </div>
                 <div style="flex: 1;display: flex;flex-direction: column;">
-                    <div style="flex: 5;">
+                    <div style="flex: 3;">
 
                     </div>
                     <div style="flex: 4;color: white;display:flex;">
                         <div style="flex: 1;">
 
                         </div>
-                        <div style="flex: 4;">
-                            <p>Hello, I'm</p>
-                            <h1>Ahmad Arab</h1>
-                            <p>Full stack developer</p>
+                        <div style="flex: 5;">
+                            <p class="jost-normal-300 font-size-35" style="margin-bottom: 0rem; padding: 0rem;">HELLO, I'M</p>
+                            <h1 class="playfair-display-normal-1000 font-size-80" style="margin-bottom: 1rem;margin-top: 0rem;padding: 0rem;">Ahmad Arab</h1>
+                            <p class="playfair-display-italic-400 font-size-22" style="margin-top: 0rem;">Full stack developer</p>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            <div style="flex: 1;background-color: #5569dc;color: white;display: flex;flex-direction: column;align-items: center;">
+            <div class="jost-normal-300" style="flex: 1;background-color: #5569dc;color: white;display: flex;flex-direction: column;align-items: center;">
                 <img src="Images/me.jpg" style="width: 150px;height: 150px;object-fit: cover;border-radius: 50%;overflow: hidden;margin-top: 10vh;"/>
-                <h1>Ahmad Arab</h1>
-                <p style="margin: 3px;margin-top: 1rem;">Full-stack Developer</p>
-                <p style="margin: 3px;">4 years experience</p>
-                <p style="margin: 3px;">Erbil, Iraq</p>
+                <h1 class="playfair-display-normal-1000">Ahmad Arab</h1>
+                <p style="margin: 2px;margin-top: 1rem;">Full-stack Developer</p>
+                <p style="margin: 2px;">4 years experience</p>
+                <p style="margin: 2px;">Erbil, Iraq</p>
                 <p style="margin:3px;margin-top: 5rem;"><a href="mailto:ahmadarab45521@gmail.com">ahmadarab45521@gmail.com</a></p>
                 <p style="margin: 3px;">(+964) 751 366 4977</p>
                 <div style="margin-top: 2rem;display: flex;gap: 1rem;justify-content: center;">
@@ -75,92 +78,407 @@
     </header>
 
     <main style="background-color: white;padding: 0;word-wrap: break-word;white-space: normal;">
-        <section id="about" style="background-color: #eef0fb;padding: 10vh 10vw;">
-            <h2>About</h2>
-            <p>MY BACKGROUND</p>
-            <p>Hi there!, I'm a senior software engineer, primarily working in the .NET ecosystem. Things I am interested in: C# and .NET,
+        <section id="about" style="background-color: #eef0fb;padding: 10vh 17vw;">
+            <h2 class="section-title">About</h2>
+            <p class="section-subtitle">MY BACKGROUND</p>
+            <p class="section-paragraph-big">Hi there!, I'm a senior software engineer, primarily working in the .NET ecosystem. Things I am interested in: C# and .NET,
                 Software engineering and architecture, Distributed systems and how to build them, Databases and optimization
-                techniques, Career and personal growth, One of my goals is to be part of the leading frontier in software solutions. I have
-                achieved the first step to my goal by working for the leading software company in Iraq (Awrosoft). Looking forward to
+                techniques, Career and personal growth, One of my goals is to be part of the leading frontier in software solutions. Looking forward to
                 becoming a leader on international stage. If this sounds interesting, let's connect</p>
         </section>
-        <section id="education" style="padding: 10vh 10vw;">
-            <h2>Education</h2>
-            <p>WHAT I'VE LEARNED</p>
-            <p>2018 - 2022</p>
-            <p>Cordoba Private University - Al Qamishli, Syria</p>
-            <p>Bachelor of Engineering; Electrical, Electronics and Communications Engineering</p>
-            <p>GPA: 2.83/4.0</p>
+        <section id="education" style="padding: 10vh 17vw;">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">WHAT I'VE LEARNED</p>
+            <p class="section-paragraph">2018 - 2022 <br/>
+            Cordoba Private University - Al Qamishli, Syria<br/>
+            Bachelor of Engineering; Electrical, Electronics and Communications Engineering<br/>
+            <strong>GPA:</strong> 2.83/4.0</p>
         </section>
-        <section id="experience" style="padding: 10vh 10vw;">
-            <h2>Experience</h2>
-            <p>WHERE I'VE WORKED</p>
-            <div>
-                <p>Jun. 2023 - Present</p>
-                <p>Awrosoft - Erbil, Iraq</p>
-                <p>Full-Stack Developer</p>
-                <p>Worked on many heigh-scale systems that services hundreds of thousands of users. Responsibilities:</p>
-                <ol>
-                    <li>Maintain and add features to Hevra ERP system which includes solutions for deferent enterprise management
-                        sectors: Accounting, HR, Workflow, Attendance, Payroll, Quality assurance and Project management.</li>
-                    <li>Develop and maintain scalable, secure and heigh performant systems for the government.</li>
-                    <li>Deal with Microservices, SaaS and Docker on daily basis.</li>
+        <section id="experience" style="padding: 10vh 17vw;padding-top: 0rem;">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">WHERE I'VE WORKED</p>
+            <div class="section-paragraph">
+                <p style="margin-bottom: 0rem;">Jun. 2023 - Present<br/>
+                Awrosoft - Erbil, Iraq<br/>
+                Full-Stack Developer<br/>
+                Worked on many heigh-scale systems that services hundreds of thousands of users. Responsibilities:</p>
+                <ol style="margin: 0rem;">
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Maintain and add features to Hevra ERP system which includes solutions for deferent enterprise management
+                        sectors: Accounting, HR, Workflow, Attendance, Payroll, Quality assurance and Project management.</p></li>
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Develop and maintain scalable, secure and heigh performant systems for the government.</p></li>
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Deal with Microservices, SaaS and Docker on daily basis.</p></li>
                 </ol>
-                <p>Technology stacks: .NET, SQL Server, Docker, SaaS, Microservices</p>
+                <p style="margin-top: 0rem;">Technology stacks: .NET, SQL Server, Docker, SaaS, Microservices</p>
             </div>
-            <div>
-                <p>Sep. 2022 - Feb. 2023</p>
-                <p>Excel Technologies Ltd. - Remot</p>
-                <p>Back-End Developer</p>
-                <p>Worked remotely on one project. Responsibilities:</p>
-                <ol>
-                    <li>Architect and build the back end from scratch for a new Visitor Management System (VMS) that resembles the
+            <!--Separator-->
+            <div style="display: flex;align-items: center;height: 2rem;width: 100%;">
+                <div style="display: flex;align-items: center;width: 100%;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                
+                </div>
+            </div>
+            <div class="section-paragraph">
+                <p style="margin-bottom: 0rem;">Sep. 2022 - Feb. 2023<br/>
+                Excel Technologies Ltd. - Remot<br/>
+                Back-End Developer<br/>
+                Worked remotely on one project. Responsibilities:</p>
+                <ol style="margin: 0rem;">
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Architect and build the back end from scratch for a new Visitor Management System (VMS) that resembles the
                         existing Hikvision VMS. The systems integrates numerous Hikvision surveillance devices into on system that is able to
-                        monitor and track humans and vehicles.</li>
+                        monitor and track humans and vehicles.</p></li>
                 </ol>
-                <p>Technology stacks: .NET Core, SQL Server, Hikvision surveillance devices.</p>
+                <p style="margin-top: 0rem;">Technology stacks: .NET Core, SQL Server, Hikvision surveillance devices.</p>
             </div>
-            <div>
-                <p>Jun. 2020 - Aug. 2022</p>
-                <p>AB Techno - Al Qamishli, Syrai</p>
-                <p>Junior Full-Stack Developer</p>
-                <p>Worked on several projects for the government. Responsibilities:</p>
-                <ol>
-                    <li>Build and maintain networking applications that are capable of monitoring, detecting failures and
-                        reporting.</li>
-                    <li>Collaborate with team members to architect and develop large software solutions to automize
-                        government work, these systems consisted of APIs, Client applications and large databases.</li>
+            <!--Separator-->
+            <div style="display: flex;align-items: center;height: 2rem;width: 100%;">
+                <div style="display: flex;align-items: center;width: 100%;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                
+                </div>
+            </div>
+            <div class="section-paragraph">
+                <p style="margin-bottom: 0rem;">Jun. 2020 - Aug. 2022<br/>
+                AB Techno - Al Qamishli, Syrai<br/>
+                Junior Full-Stack Developer<br/>
+                Worked on several projects for the government. Responsibilities:</p>
+                <ol style="margin: 0rem;">
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Build and maintain networking applications that are capable of monitoring, detecting failures and
+                        reporting.</p></li>
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Collaborate with team members to architect and develop large software solutions to automize
+                        government work, these systems consisted of APIs, Client applications and large databases.</p></li>
                 </ol>
-                <p>Technology stacks: .NET , SQL server, Networking protocols.</p>
+                <p style="margin-top: 0rem;">Technology stacks: .NET , SQL server, Networking protocols.</p>
             </div>
-            <div>
-                <p>Mar. 2022 - Jun. 2022</p>
-                <p>Netween LLC. - Remot</p>
-                <p>Junior Full-Stack Developer</p>
-                <p>This was a freelance position, Netween LLC was a new startup then, and we were a team from around the world, we
-                    were working on a decentralized social media platform.</p>
+            <!--Separator-->
+            <div style="display: flex;align-items: center;height: 2rem;width: 100%;">
+                <div style="display: flex;align-items: center;width: 100%;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                
+                </div>
+            </div>
+            <div class="section-paragraph">
+                <p>Mar. 2022 - Jun. 2022<br/>
+                Netween LLC. - Remot<br/>
+                Junior Full-Stack Developer<br/>
+                This was a freelance position, Netween LLC was a new startup then, and we were a team from around the world, we
+                were working on a decentralized social media platform.</p>
             </div>
         </section>
-        <section id="SkillsAndLanguages" style="padding: 10vh 10vw;">
-            <h2>Skills & Languages</h2>
-            <p>WHAT I BRING TO THE TABLE</p>
-            <table>
+        <section id="SkillsAndLanguages" style="padding: 10vh 17vw;padding-top: 0rem;">
+            <h2 class="section-title">Skills & Languages</h2>
+            <p class="section-subtitle">WHAT I BRING TO THE TABLE</p>
+            <table class="section-paragraph">
                 <tr>
-                    <td style="min-width: 20vw;">.NET Core</td>
-                    <td>
+                    <td style="min-width: 20vw;padding: 0.5rem;">.NET Core</td>
+                    <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 300px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" id="progress-bar"></div>
+                            <div style="display: flex;align-items: center;width: 30vw;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="97"></div>
                             </div>
-                            <span id="percentage-value">0%</span>
+                            <span class="percentage-value" data-percentage="97">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">ASP.NET Core</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="93"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="93">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Blazor</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="80"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="80">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">.NET MAUI</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="60"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="60">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">APIs (REST, gRPC, GraphQL)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="90"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="90">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Databases (MSSQL Server, MongoDB)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="85"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="85">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Web (HTML, CSS, javascript)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="95"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="95">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Containarization & Orchestration (Docker, Kubernetes)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="75"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="75">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Microservices</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="85"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="85">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <!--Separator-->
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">
+                        <div style="display: flex;align-items: center;height: 2rem;">
+                            <div style="display: flex;align-items: center;width: 300px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <!--Business-->
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">ERP Softwares</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="80"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="80">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Accounting Softwares</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="65"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="65">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">CMS Softwares</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="90"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="90">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">CRM Softwares</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="55"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="55">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Networking Softwares</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="50"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="50">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <!--Separator-->
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">
+                        <div style="display: flex;align-items: center;height: 2rem;">
+                            <div style="display: flex;align-items: center;width: 300px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <!--Languages-->
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">English (C1)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="95"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="95">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Dautch (A1)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="15"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="15">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Kurdish (Mother tounge)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="100"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="100">0%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="min-width: 20vw;padding: 0.5rem;">Arabic (Bilingual)</td>
+                    <td style="padding-left: 1rem;">
+                        <div style="display: flex;align-items: center;">
+                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="100"></div>
+                            </div>
+                            <span class="percentage-value" data-percentage="100">0%</span>
                         </div>
                     </td>
                 </tr>
             </table>
         </section>
+        <section id="projects" style="padding: 10vh 17vw;padding-top: 0rem;">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">WHAT I'VE ACHIEVED</p>
+            <div class="section-paragraph">
+                <p>Hevra ERP</br>
+                A SaaS system for managing enterprise resources, it consists of several services: 
+                    HR, Accounting, Workflow, Attendance, Payroll, POS, Quality assurance and project management. 
+                    It utilizes Microservices architecture. 
+                    I was mainly responsible for migrating it to SaaS and deal with the complications which come with that.</p>               
+            </div>
+            <!--Separator-->
+            <div style="display: flex;align-items: center;height: 2rem;width: 100%;">
+                <div style="display: flex;align-items: center;width: 100%;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                
+                </div>
+            </div>
+            <div class="section-paragraph">
+                <p style="margin-bottom: 0rem;">University Management System</br>
+                Its a system based on Hevra ERP customized for the university management, It is currently used by these universities:</p>    
+                <ol style="margin: 0rem;">
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">University of Duhok (UOD).</p></li>
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Lebanese French University (LFU).</p></li>
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Salaheddin University (SU).</p></li>
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Alkitab University.</p></li>
+                    <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Ministry of higher education of Kurdistan region in Iraq.</li>
+                </ol>      
+                <p style="margin-top: 0rem;">The system utilizes Microservices architecture, and has client applications for admins and employees, and it has web and mobile portals for students.</p>     
+            </div>
+            <!--Separator-->
+            <div style="display: flex;align-items: center;height: 2rem;width: 100%;">
+                <div style="display: flex;align-items: center;width: 100%;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                                
+                </div>
+            </div>
+            <div class="section-paragraph">
+                <p style="margin-bottom: 0rem;">Central Archive</br>
+                A system for managing Employees and citizens information in a secure and useful manner for a governmental organization. </br>
+                    The system consisted of several pieces of software:</p>    
+                <ol style="margin: 0rem;">
+                    <li><p>several SQL Server databases each persisting the data of a specific business domain.</p></li>
+                    <li><p>several APIs in the back-end which securely and performantly receives and sends data to client apps.</p></li>
+                    <li><p>several Desktop and WEB Clients, each targeting a certain type of users: a web dashboard for system admins to see reports and managing permissions, a desktop application for employees to enter data, a desktop application for detailed reports about specific people</p></li>
+                </ol>          
+            </div>
+        </section>
+        <section id="contact" style="padding: 10vh 17vw;background-color: #eef0fb;">
+            <div class="section-paragraph" style="display: flex;">
+                <div style="flex: 5;display: flex;flex-direction: column;">
+                    <h2 class="section-title" style="line-height: 3rem;color:#1c2349 ;">I'd love to hear<br/> from you.</h2>
+                    <div style="justify-self: end;margin-top: 4rem;display: flex;gap: 1rem;">
+                        <!--LinkedIn Icon-->
+                        <a href="https://www.linkedin.com/in/ahmad-arab-532332217/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M8.64258,4c-1.459,0 -2.64258,1.18163 -2.64258,2.64063c0,1.459 1.18262,2.66797 2.64063,2.66797c1.458,0 2.64258,-1.20897 2.64258,-2.66797c0,-1.458 -1.18163,-2.64062 -2.64062,-2.64062zM21.53516,11c-2.219,0 -3.48866,1.16045 -4.09766,2.31445h-0.06445v-2.00391h-4.37305v14.68945h4.55664v-7.27148c0,-1.916 0.14463,-3.76758 2.51563,-3.76758c2.337,0 2.37109,2.18467 2.37109,3.88867v7.15039h4.55078h0.00586v-8.06836c0,-3.948 -0.84884,-6.93164 -5.46484,-6.93164zM6.36328,11.31055v14.68945h4.56055v-14.68945z"></path></g></g>
+                            </svg></a>
+                        <!--Github Icon-->
+                        <a href="https://github.com/ahmad-arab" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path></g></g>
+                            </svg></a>
+                        <!--Facebook Icon-->
+                        <a href="https://www.facebook.com/ahmad.arab.5817" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M17.525,9h-3.525v-2c0,-1.032 0.084,-1.682 1.563,-1.682h1.868v-3.18c-0.909,-0.094 -1.823,-0.14 -2.738,-0.138c-2.713,0 -4.693,1.657 -4.693,4.699v2.301h-3v4l3,-0.001v9.001h4v-9.003l3.066,-0.001z"></path></g></g>
+                            </svg></a>
+                        <!--Instagram Icon-->
+                        <a href="https://www.instagram.com/ahmad_s_arab/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g>
+                            </svg></a>
+                    </div>
+                </div>
+                <div style="flex: 5;display: flex;flex-direction: column;align-items: center;">
+                    <p style="margin:3px;margin-top: 2rem;"><a href="mailto:ahmadarab45521@gmail.com">ahmadarab45521@gmail.com</a></p>
+                    <p style="margin: 3px;">(+964) 751 366 4977</p>
+                    <div style="display: flex;justify-content: center;">
+                        <a href="Assests/Ahmad Arab Software Engineer.pdf" 
+                            download="Ahmad Arab Software Engineer.pdf"  target="_blank"
+                            style="background-color: #5569dc;color: white;width: 10rem;height: 3.3rem;display: flex;justify-content: center;align-items: center;margin-top: 4rem;">
+                            Download CV
+                        </a>
+                    </div>                   
+                </div>
+                <div style="flex: 3;display: flex;flex-direction: column;justify-content: end;align-items: center;">
+                    <a href="#hero"><svg fill="#5569dc" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-25.6 -25.6 563.20 563.20" xml:space="preserve" stroke="#5569dc" stroke-width="11.776"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="4.096"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,5.333C114.88,5.333,0,117.76,0,256s114.88,250.667,256,250.667S512,394.24,512,256S397.12,5.333,256,5.333z M256,485.333C126.613,485.333,21.333,382.4,21.333,256S126.613,26.667,256,26.667S490.667,129.493,490.667,256 S385.387,485.333,256,485.333z"></path> <path d="M264.32,147.947c-4.053-4.587-10.987-5.013-15.573-0.96c-0.32,0.32-0.64,0.64-0.96,0.96L109.12,318.613 c-3.733,4.587-2.987,11.307,1.6,15.04s11.307,2.987,15.04-1.6L256,171.627l130.347,160.427c3.733,4.587,10.453,5.227,15.04,1.6 c4.587-3.733,5.227-10.453,1.6-15.04L264.32,147.947z"></path> </g> </g> </g> </g></svg></a>
+                    
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Ahmad Arab</p>
+    <footer style="background-color: #5569dc;margin: 0px;padding: 2vh 17vw; color: white;">
+        <p class="playfair-display-italic-400 font-size-medium">&copy; 2024 by Ahmad Arab</p>
     </footer>
     <script src="index.js"></script>
 </body>

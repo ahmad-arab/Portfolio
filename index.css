@@ -1,3 +1,97 @@
 html {
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.playfair-display-italic-400 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style:italic;
+}
+.playfair-display-normal-1000 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+.jost-normal-300 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.jost-normal-200 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.font-size-medium{
+    font-size: medium;
+}
+.font-size-large{
+    font-size: large;
+}
+.font-size-larger{
+    font-size: larger;
+}
+.font-size-x-large{
+    font-size:x-large;
+}
+.font-size-xx-large{
+    font-size:xx-large;
+}
+.font-size-80{
+    font-size: 80px;
+}
+.font-size-60{
+    font-size: 60px;
+}
+.font-size-35{
+    font-size: 35px;
+}
+.font-size-22{
+    font-size: 22px;
+}
+
+.section-title{
+    color:#5569dc;
+    margin-bottom: 0rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:italic;
+    font-size: 35px;
+}
+.section-subtitle{
+    color:#5569dc;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size:x-large;
+}
+.section-paragraph-big{
+    color:#1c2349 ;
+    line-height: 3rem;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size:x-large;
+}
+.section-paragraph{
+    color:#1c2349 ;
+    line-height: 2rem;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size:medium;
+}

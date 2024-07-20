@@ -9,20 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
-<body style="padding: 0;margin: 0;width: 100%;">  
+<body>  
     <div style="position: fixed;top: 0;left: 0;z-index: -1;overflow: hidden;">
         <img src="Images/coding.jpg" style="z-index: -1;max-width: 75%;"/>
     </div> 
-    <header id="hero" style="position: relative;width: 100%; height: 110vh;overflow: hidden;background-color: rgba(0, 0, 25, 0.45);">
-        <div style="display: flex; width: 100%; height: 100%;top: 0;left: 0;overflow: hidden;position: absolute;">    
+    <header id="hero">
+        <div class="header-content-container">    
                        
             <div style="flex: 3;display: flex;flex-direction: column;">
-                <div class="playfair-display-italic-400 font-size-large" style="width: 100%;background-color: #5569dc;height: 5rem;display: flex;justify-content: center;align-items: center;color: white;">
-                    <a href="#about" style="margin: 1rem;">About</a>
-                    <a href="#education" style="margin: 1rem;">Education</a>
-                    <a href="#experience" style="margin: 1rem;">Experience</a>
-                    <a href="#SkillsAndLanguages" style="margin: 1rem;">Skills & Languages</a>
-                    <a href="#projects" style="margin: 1rem;">Projects</a>
+                <div class="playfair-display-italic-400 font-size-large navigation-bar">
+                    <a href="#about" class="navigation-link">About</a>
+                    <a href="#education" class="navigation-link">Education</a>
+                    <a href="#experience" class="navigation-link">Experience</a>
+                    <a href="#SkillsAndLanguages" class="navigation-link">Skills & Languages</a>
+                    <a href="#projects" class="navigation-link">Projects</a>
                 </div>
                 <div style="flex: 1;display: flex;flex-direction: column;">
                     <div style="flex: 3;">
@@ -78,6 +78,7 @@
     </header>
 
     <main style="background-color: white;padding: 0;word-wrap: break-word;white-space: normal;">
+        <!--About Section-->
         <section id="about" style="background-color: #eef0fb;padding: 10vh 17vw;">
             <h2 class="section-title">About</h2>
             <p class="section-subtitle">MY BACKGROUND</p>
@@ -86,6 +87,7 @@
                 techniques, Career and personal growth, One of my goals is to be part of the leading frontier in software solutions. Looking forward to
                 becoming a leader on international stage. If this sounds interesting, let's connect</p>
         </section>
+        <!--Education Section-->
         <section id="education" style="padding: 10vh 17vw;">
             <h2 class="section-title">Education</h2>
             <p class="section-subtitle">WHAT I'VE LEARNED</p>
@@ -98,9 +100,9 @@
             <h2 class="section-title">Experience</h2>
             <p class="section-subtitle">WHERE I'VE WORKED</p>
             <div class="section-paragraph">
-                <p style="margin-bottom: 0rem;">Jun. 2023 - Present<br/>
-                Awrosoft - Erbil, Iraq<br/>
-                Full-Stack Developer<br/>
+                <p style="margin-bottom: 0rem;"><strong>Jun. 2023 - Present</strong><br/>
+                    <strong>Awrosoft - Erbil, Iraq</strong><br/>
+                    <strong>Full-Stack Developer</strong><br/>
                 Worked on many heigh-scale systems that services hundreds of thousands of users. Responsibilities:</p>
                 <ol style="margin: 0rem;">
                     <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Maintain and add features to Hevra ERP system which includes solutions for deferent enterprise management
@@ -117,9 +119,9 @@
                 </div>
             </div>
             <div class="section-paragraph">
-                <p style="margin-bottom: 0rem;">Sep. 2022 - Feb. 2023<br/>
-                Excel Technologies Ltd. - Remot<br/>
-                Back-End Developer<br/>
+                <p style="margin-bottom: 0rem;"><strong>Sep. 2022 - Feb. 2023</strong><br/>
+                    <strong>Excel Technologies Ltd. - Remot</strong><br/>
+                        <strong>Back-End Developer</strong><br/>
                 Worked remotely on one project. Responsibilities:</p>
                 <ol style="margin: 0rem;">
                     <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Architect and build the back end from scratch for a new Visitor Management System (VMS) that resembles the
@@ -135,9 +137,9 @@
                 </div>
             </div>
             <div class="section-paragraph">
-                <p style="margin-bottom: 0rem;">Jun. 2020 - Aug. 2022<br/>
-                AB Techno - Al Qamishli, Syrai<br/>
-                Junior Full-Stack Developer<br/>
+                <p style="margin-bottom: 0rem;"><strong>Jun. 2020 - Aug. 2022</strong><br/>
+                    <strong>AB Techno - Al Qamishli, Syrai</strong><br/>
+                        <strong>Junior Full-Stack Developer</strong><br/>
                 Worked on several projects for the government. Responsibilities:</p>
                 <ol style="margin: 0rem;">
                     <li><p style="margin-bottom: 0rem;margin-top: 0rem;">Build and maintain networking applications that are capable of monitoring, detecting failures and
@@ -154,9 +156,9 @@
                 </div>
             </div>
             <div class="section-paragraph">
-                <p>Mar. 2022 - Jun. 2022<br/>
-                Netween LLC. - Remot<br/>
-                Junior Full-Stack Developer<br/>
+                <p><strong>Mar. 2022 - Jun. 2022</strong><br/>
+                    <strong>Netween LLC. - Remot</strong><br/>
+                        <strong>Junior Full-Stack Developer</strong><br/>
                 This was a freelance position, Netween LLC was a new startup then, and we were a team from around the world, we
                 were working on a decentralized social media platform.</p>
             </div>
@@ -166,11 +168,11 @@
             <p class="section-subtitle">WHAT I BRING TO THE TABLE</p>
             <table class="section-paragraph">
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">.NET Core</td>
+                    <td class="skill-text">.NET Core</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 30vw;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="97"></div>
+                            <div class="progress-line">
+                                <div class="progress-bar" data-percentage="97"></div>
                             </div>
                             <span class="percentage-value" data-percentage="97">0%</span>
                         </div>
@@ -180,8 +182,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">ASP.NET Core</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="93"></div>
+                            <div  class="progress-line">
+                                <div  class="progress-bar" data-percentage="93"></div>
                             </div>
                             <span class="percentage-value" data-percentage="93">0%</span>
                         </div>
@@ -191,8 +193,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Blazor</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="80"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="80"></div>
                             </div>
                             <span class="percentage-value" data-percentage="80">0%</span>
                         </div>
@@ -202,8 +204,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">.NET MAUI</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="60"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="60"></div>
                             </div>
                             <span class="percentage-value" data-percentage="60">0%</span>
                         </div>
@@ -213,8 +215,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">APIs (REST, gRPC, GraphQL)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="90"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="90"></div>
                             </div>
                             <span class="percentage-value" data-percentage="90">0%</span>
                         </div>
@@ -224,8 +226,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Databases (MSSQL Server, MongoDB)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="85"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="85"></div>
                             </div>
                             <span class="percentage-value" data-percentage="85">0%</span>
                         </div>
@@ -235,8 +237,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Web (HTML, CSS, javascript)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="95"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="95"></div>
                             </div>
                             <span class="percentage-value" data-percentage="95">0%</span>
                         </div>
@@ -246,8 +248,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Containarization & Orchestration (Docker, Kubernetes)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="75"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="75"></div>
                             </div>
                             <span class="percentage-value" data-percentage="75">0%</span>
                         </div>
@@ -257,8 +259,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Microservices</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="85"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="85"></div>
                             </div>
                             <span class="percentage-value" data-percentage="85">0%</span>
                         </div>
@@ -281,8 +283,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">ERP Softwares</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="80"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="80"></div>
                             </div>
                             <span class="percentage-value" data-percentage="80">0%</span>
                         </div>
@@ -292,8 +294,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Accounting Softwares</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="65"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="65"></div>
                             </div>
                             <span class="percentage-value" data-percentage="65">0%</span>
                         </div>
@@ -303,8 +305,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">CMS Softwares</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="90"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="90"></div>
                             </div>
                             <span class="percentage-value" data-percentage="90">0%</span>
                         </div>
@@ -314,8 +316,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">CRM Softwares</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="55"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="55"></div>
                             </div>
                             <span class="percentage-value" data-percentage="55">0%</span>
                         </div>
@@ -325,8 +327,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Networking Softwares</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="50"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="50"></div>
                             </div>
                             <span class="percentage-value" data-percentage="50">0%</span>
                         </div>
@@ -349,8 +351,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">English (C1)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="95"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="95"></div>
                             </div>
                             <span class="percentage-value" data-percentage="95">0%</span>
                         </div>
@@ -360,8 +362,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Dautch (A1)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="15"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="15"></div>
                             </div>
                             <span class="percentage-value" data-percentage="15">0%</span>
                         </div>
@@ -371,8 +373,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Kurdish (Mother tounge)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="100"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="100"></div>
                             </div>
                             <span class="percentage-value" data-percentage="100">0%</span>
                         </div>
@@ -382,8 +384,8 @@
                     <td style="min-width: 20vw;padding: 0.5rem;">Arabic (Bilingual)</td>
                     <td style="padding-left: 1rem;">
                         <div style="display: flex;align-items: center;">
-                            <div style="display: flex;align-items: center;width: 500px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
-                                <div style="width: 0;height: 3px;background-color: #5569dc;transition: width 2s;" class="progress-bar" data-percentage="100"></div>
+                            <div  class="progress-line">
+                                <div class="progress-bar" data-percentage="100"></div>
                             </div>
                             <span class="percentage-value" data-percentage="100">0%</span>
                         </div>
@@ -395,7 +397,7 @@
             <h2 class="section-title">Projects</h2>
             <p class="section-subtitle">WHAT I'VE ACHIEVED</p>
             <div class="section-paragraph">
-                <p>Hevra ERP</br>
+                <p><strong>HevraERP</strong></br>
                 A SaaS system for managing enterprise resources, it consists of several services: 
                     HR, Accounting, Workflow, Attendance, Payroll, POS, Quality assurance and project management. 
                     It utilizes Microservices architecture. 
@@ -408,7 +410,7 @@
                 </div>
             </div>
             <div class="section-paragraph">
-                <p style="margin-bottom: 0rem;">University Management System</br>
+                <p style="margin-bottom: 0rem;"><strong>University Management System</strong></br>
                 Its a system based on Hevra ERP customized for the university management, It is currently used by these universities:</p>    
                 <ol style="margin: 0rem;">
                     <li><p style="margin-bottom: 0rem;margin-top: 0rem;">University of Duhok (UOD).</p></li>
@@ -426,7 +428,7 @@
                 </div>
             </div>
             <div class="section-paragraph">
-                <p style="margin-bottom: 0rem;">Central Archive</br>
+                <p style="margin-bottom: 0rem;"><strong>Central Archive</strong></br>
                 A system for managing Employees and citizens information in a secure and useful manner for a governmental organization. </br>
                     The system consisted of several pieces of software:</p>    
                 <ol style="margin: 0rem;">

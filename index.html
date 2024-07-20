@@ -11,12 +11,12 @@
 </head>
 <body>  
     <div style="position: fixed;top: 0;left: 0;z-index: -1;overflow: hidden;">
-        <img src="Images/coding.jpg" style="z-index: -1;max-width: 75%;"/>
+        <img id="background-image" src="Images/coding.jpg"/>
     </div> 
     <header id="hero">
         <div class="header-content-container">    
                        
-            <div style="flex: 3;display: flex;flex-direction: column;">
+            <div class="left-header">
                 <div class="playfair-display-italic-400 font-size-large navigation-bar">
                     <a href="#about" class="navigation-link">About</a>
                     <a href="#education" class="navigation-link">Education</a>
@@ -28,11 +28,11 @@
                     <div style="flex: 3;">
 
                     </div>
-                    <div style="flex: 4;color: white;display:flex;">
-                        <div style="flex: 1;">
+                    <div id="header-inroduction-text-container">
+                        <div id="header-inroduction-text-container-div-1">
 
                         </div>
-                        <div style="flex: 5;">
+                        <div id="header-inroduction-text-container-div-2">
                             <p class="jost-normal-300 font-size-35" style="margin-bottom: 0rem; padding: 0rem;">HELLO, I'M</p>
                             <h1 class="playfair-display-normal-1000 font-size-80" style="margin-bottom: 1rem;margin-top: 0rem;padding: 0rem;">Ahmad Arab</h1>
                             <p class="playfair-display-italic-400 font-size-22" style="margin-top: 0rem;">Full stack developer</p>
@@ -41,13 +41,13 @@
                     </div>
                 </div>
             </div>
-            <div class="jost-normal-300" style="flex: 1;background-color: #5569dc;color: white;display: flex;flex-direction: column;align-items: center;">
-                <img src="Images/me.jpg" style="width: 150px;height: 150px;object-fit: cover;border-radius: 50%;overflow: hidden;margin-top: 10vh;"/>
-                <h1 class="playfair-display-normal-1000">Ahmad Arab</h1>
+            <div class="jost-normal-300 right-header">
+                <img id="right-header-image" src="Images/me.jpg"/>
+                <h1 id="right-header-name" class="playfair-display-normal-1000">Ahmad Arab</h1>
                 <p style="margin: 2px;margin-top: 1rem;">Full-stack Developer</p>
                 <p style="margin: 2px;">4 years experience</p>
                 <p style="margin: 2px;">Erbil, Iraq</p>
-                <p style="margin:3px;margin-top: 5rem;"><a href="mailto:ahmadarab45521@gmail.com">ahmadarab45521@gmail.com</a></p>
+                <p id="right-header-email"><a href="mailto:ahmadarab45521@gmail.com">ahmadarab45521@gmail.com</a></p>
                 <p style="margin: 3px;">(+964) 751 366 4977</p>
                 <div style="margin-top: 2rem;display: flex;gap: 1rem;justify-content: center;">
                     <!--LinkedIn Icon-->
@@ -69,7 +69,7 @@
                 </div>
                 <a href="Assests/Ahmad Arab Software Engineer.pdf" 
                    download="Ahmad Arab Software Engineer.pdf"  target="_blank"
-                   style="background-color: white;color: #5569dc;width: 10rem;height: 3.3rem;display: flex;justify-content: center;align-items: center;margin-top: 2rem;">
+                   style="background-color: white;color: #5569dc;width: 10rem;height: 3.3rem;display: flex;justify-content: center;align-items: center;margin-top: 2rem;margin-bottom: 4rem;">
                     Download CV
                 </a>
             </div>
@@ -79,7 +79,7 @@
 
     <main style="background-color: white;padding: 0;word-wrap: break-word;white-space: normal;">
         <!--About Section-->
-        <section id="about" style="background-color: #eef0fb;padding: 10vh 17vw;">
+        <section id="about" class="section-style" style="background-color: #eef0fb;">
             <h2 class="section-title">About</h2>
             <p class="section-subtitle">MY BACKGROUND</p>
             <p class="section-paragraph-big">Hi there!, I'm a senior software engineer, primarily working in the .NET ecosystem. Things I am interested in: C# and .NET,
@@ -88,7 +88,7 @@
                 becoming a leader on international stage. If this sounds interesting, let's connect</p>
         </section>
         <!--Education Section-->
-        <section id="education" style="padding: 10vh 17vw;">
+        <section id="education" class="section-style">
             <h2 class="section-title">Education</h2>
             <p class="section-subtitle">WHAT I'VE LEARNED</p>
             <p class="section-paragraph">2018 - 2022 <br/>
@@ -96,7 +96,7 @@
             Bachelor of Engineering; Electrical, Electronics and Communications Engineering<br/>
             <strong>GPA:</strong> 2.83/4.0</p>
         </section>
-        <section id="experience" style="padding: 10vh 17vw;padding-top: 0rem;">
+        <section id="experience" class="section-style" style="padding-top: 0rem;">
             <h2 class="section-title">Experience</h2>
             <p class="section-subtitle">WHERE I'VE WORKED</p>
             <div class="section-paragraph">
@@ -163,13 +163,14 @@
                 were working on a decentralized social media platform.</p>
             </div>
         </section>
-        <section id="SkillsAndLanguages" style="padding: 10vh 17vw;padding-top: 0rem;">
+        <section id="SkillsAndLanguages" class="section-style" style="padding-top: 0rem;">
             <h2 class="section-title">Skills & Languages</h2>
             <p class="section-subtitle">WHAT I BRING TO THE TABLE</p>
             <table class="section-paragraph">
                 <tr>
                     <td class="skill-text">.NET Core</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">.NET Core</p>
                         <div style="display: flex;align-items: center;">
                             <div class="progress-line">
                                 <div class="progress-bar" data-percentage="97"></div>
@@ -179,8 +180,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">ASP.NET Core</td>
+                    <td class="skill-text">ASP.NET Core</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">ASP.NET Core</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div  class="progress-bar" data-percentage="93"></div>
@@ -190,8 +192,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Blazor</td>
+                    <td class="skill-text">Blazor</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Blazor</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="80"></div>
@@ -201,8 +204,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">.NET MAUI</td>
+                    <td class="skill-text">.NET MAUI</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">.NET MAUI</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="60"></div>
@@ -212,8 +216,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">APIs (REST, gRPC, GraphQL)</td>
+                    <td class="skill-text">APIs (REST, gRPC, GraphQL)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">APIs (REST, gRPC, GraphQL)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="90"></div>
@@ -223,8 +228,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Databases (MSSQL Server, MongoDB)</td>
+                    <td class="skill-text">Databases (MSSQL Server, MongoDB)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Databases (MSSQL Server, MongoDB)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="85"></div>
@@ -234,8 +240,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Web (HTML, CSS, javascript)</td>
+                    <td class="skill-text">Web (HTML, CSS, javascript)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Web (HTML, CSS, javascript)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="95"></div>
@@ -245,8 +252,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Containarization & Orchestration (Docker, Kubernetes)</td>
+                    <td class="skill-text">Containarization & Orchestration (Docker, Kubernetes)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Containarization & Orchestration (Docker, Kubernetes)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="75"></div>
@@ -256,8 +264,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Microservices</td>
+                    <td class="skill-text">Microservices</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Microservices</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="85"></div>
@@ -268,9 +277,9 @@
                 </tr>
                 <!--Separator-->
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">
+                    <td class="skill-seperator">
                         <div style="display: flex;align-items: center;height: 2rem;">
-                            <div style="display: flex;align-items: center;width: 300px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                            <div class="skill-seperator-line">
                                 
                             </div>
                         </div>
@@ -280,8 +289,9 @@
                 </tr>
                 <!--Business-->
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">ERP Softwares</td>
+                    <td class="skill-text">ERP Softwares</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">ERP Softwares</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="80"></div>
@@ -291,8 +301,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Accounting Softwares</td>
+                    <td class="skill-text">Accounting Softwares</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Accounting Softwares</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="65"></div>
@@ -302,8 +313,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">CMS Softwares</td>
+                    <td class="skill-text">Accounting Softwares</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Accounting Softwares</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="90"></div>
@@ -313,8 +325,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">CRM Softwares</td>
+                    <td class="skill-text">CRM Softwares</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">CRM Softwares</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="55"></div>
@@ -324,8 +337,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Networking Softwares</td>
+                    <td class="skill-text">Networking Softwares</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Networking Softwares</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="50"></div>
@@ -336,20 +350,21 @@
                 </tr>
                 <!--Separator-->
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">
+                    <td class="skill-seperator">
                         <div style="display: flex;align-items: center;height: 2rem;">
-                            <div style="display: flex;align-items: center;width: 300px;height: 1px;background-color: #cad4e8;position: relative;margin-right: 10px;">
+                            <div class="skill-seperator-line">
                                 
                             </div>
                         </div>
                     </td>
-                    <td>
+                    <td class="skill-text">
                     </td>
                 </tr>
                 <!--Languages-->
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">English (C1)</td>
+                    <td class="skill-text">English (C1)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">English (C1)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="95"></div>
@@ -359,8 +374,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Dautch (A1)</td>
+                    <td class="skill-text">Dautch (A1)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Dautch (A1)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="15"></div>
@@ -370,8 +386,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Kurdish (Mother tounge)</td>
+                    <td class="skill-text">Kurdish (Mother tounge)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Kurdish (Mother tounge)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="100"></div>
@@ -381,8 +398,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="min-width: 20vw;padding: 0.5rem;">Arabic (Bilingual)</td>
+                    <td class="skill-text">Arabic (Bilingual)</td>
                     <td style="padding-left: 1rem;">
+                        <p class="skill-text-backup">Arabic (Bilingual)</p>
                         <div style="display: flex;align-items: center;">
                             <div  class="progress-line">
                                 <div class="progress-bar" data-percentage="100"></div>
@@ -393,7 +411,7 @@
                 </tr>
             </table>
         </section>
-        <section id="projects" style="padding: 10vh 17vw;padding-top: 0rem;">
+        <section id="projects" class="section-style" style="padding-top: 0rem;">
             <h2 class="section-title">Projects</h2>
             <p class="section-subtitle">WHAT I'VE ACHIEVED</p>
             <div class="section-paragraph">
@@ -438,11 +456,11 @@
                 </ol>          
             </div>
         </section>
-        <section id="contact" style="padding: 10vh 17vw;background-color: #eef0fb;">
-            <div class="section-paragraph" style="display: flex;">
-                <div style="flex: 5;display: flex;flex-direction: column;">
-                    <h2 class="section-title" style="line-height: 3rem;color:#1c2349 ;">I'd love to hear<br/> from you.</h2>
-                    <div style="justify-self: end;margin-top: 4rem;display: flex;gap: 1rem;">
+        <section id="contact" class="section-style" style="background-color: #eef0fb;">
+            <div id="fotter-action-div" class="section-paragraph">
+                <div id="footer-love-slogan">
+                    <h2 id="footer-love-slogan-text" class="section-title">I'd love to hear from you.</h2>
+                    <div id="fotter-link-buttons-1">
                         <!--LinkedIn Icon-->
                         <a href="https://www.linkedin.com/in/ahmad-arab-532332217/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
                             <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M8.64258,4c-1.459,0 -2.64258,1.18163 -2.64258,2.64063c0,1.459 1.18262,2.66797 2.64063,2.66797c1.458,0 2.64258,-1.20897 2.64258,-2.66797c0,-1.458 -1.18163,-2.64062 -2.64062,-2.64062zM21.53516,11c-2.219,0 -3.48866,1.16045 -4.09766,2.31445h-0.06445v-2.00391h-4.37305v14.68945h4.55664v-7.27148c0,-1.916 0.14463,-3.76758 2.51563,-3.76758c2.337,0 2.37109,2.18467 2.37109,3.88867v7.15039h4.55078h0.00586v-8.06836c0,-3.948 -0.84884,-6.93164 -5.46484,-6.93164zM6.36328,11.31055v14.68945h4.56055v-14.68945z"></path></g></g>
@@ -464,23 +482,40 @@
                 <div style="flex: 5;display: flex;flex-direction: column;align-items: center;">
                     <p style="margin:3px;margin-top: 2rem;"><a href="mailto:ahmadarab45521@gmail.com">ahmadarab45521@gmail.com</a></p>
                     <p style="margin: 3px;">(+964) 751 366 4977</p>
+                    <div id="fotter-link-buttons-2">
+                        <!--LinkedIn Icon-->
+                        <a href="https://www.linkedin.com/in/ahmad-arab-532332217/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M8.64258,4c-1.459,0 -2.64258,1.18163 -2.64258,2.64063c0,1.459 1.18262,2.66797 2.64063,2.66797c1.458,0 2.64258,-1.20897 2.64258,-2.66797c0,-1.458 -1.18163,-2.64062 -2.64062,-2.64062zM21.53516,11c-2.219,0 -3.48866,1.16045 -4.09766,2.31445h-0.06445v-2.00391h-4.37305v14.68945h4.55664v-7.27148c0,-1.916 0.14463,-3.76758 2.51563,-3.76758c2.337,0 2.37109,2.18467 2.37109,3.88867v7.15039h4.55078h0.00586v-8.06836c0,-3.948 -0.84884,-6.93164 -5.46484,-6.93164zM6.36328,11.31055v14.68945h4.56055v-14.68945z"></path></g></g>
+                            </svg></a>
+                        <!--Github Icon-->
+                        <a href="https://github.com/ahmad-arab" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path></g></g>
+                            </svg></a>
+                        <!--Facebook Icon-->
+                        <a href="https://www.facebook.com/ahmad.arab.5817" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M17.525,9h-3.525v-2c0,-1.032 0.084,-1.682 1.563,-1.682h1.868v-3.18c-0.909,-0.094 -1.823,-0.14 -2.738,-0.138c-2.713,0 -4.693,1.657 -4.693,4.699v2.301h-3v4l3,-0.001v9.001h4v-9.003l3.066,-0.001z"></path></g></g>
+                            </svg></a>
+                        <!--Instagram Icon-->
+                        <a href="https://www.instagram.com/ahmad_s_arab/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g>
+                            </svg></a>
+                    </div>
                     <div style="display: flex;justify-content: center;">
-                        <a href="Assests/Ahmad Arab Software Engineer.pdf" 
-                            download="Ahmad Arab Software Engineer.pdf"  target="_blank"
-                            style="background-color: #5569dc;color: white;width: 10rem;height: 3.3rem;display: flex;justify-content: center;align-items: center;margin-top: 4rem;">
+                        <a id="footer-cv-button" href="Assests/Ahmad Arab Software Engineer.pdf" 
+                            download="Ahmad Arab Software Engineer.pdf"  target="_blank">
                             Download CV
                         </a>
                     </div>                   
                 </div>
-                <div style="flex: 3;display: flex;flex-direction: column;justify-content: end;align-items: center;">
+                <div id="footer-hero-link">
                     <a href="#hero"><svg fill="#5569dc" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-25.6 -25.6 563.20 563.20" xml:space="preserve" stroke="#5569dc" stroke-width="11.776"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="4.096"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M256,5.333C114.88,5.333,0,117.76,0,256s114.88,250.667,256,250.667S512,394.24,512,256S397.12,5.333,256,5.333z M256,485.333C126.613,485.333,21.333,382.4,21.333,256S126.613,26.667,256,26.667S490.667,129.493,490.667,256 S385.387,485.333,256,485.333z"></path> <path d="M264.32,147.947c-4.053-4.587-10.987-5.013-15.573-0.96c-0.32,0.32-0.64,0.64-0.96,0.96L109.12,318.613 c-3.733,4.587-2.987,11.307,1.6,15.04s11.307,2.987,15.04-1.6L256,171.627l130.347,160.427c3.733,4.587,10.453,5.227,15.04,1.6 c4.587-3.733,5.227-10.453,1.6-15.04L264.32,147.947z"></path> </g> </g> </g> </g></svg></a>
                     
                 </div>
             </div>
         </section>
     </main>
-    <footer style="background-color: #5569dc;margin: 0px;padding: 2vh 17vw; color: white;">
-        <p class="playfair-display-italic-400 font-size-medium">&copy; 2024 by Ahmad Arab</p>
+    <footer class="footer-style">
+        <p id="footer-style-text" class="playfair-display-italic-400 font-size-medium">&copy; 2024 by Ahmad Arab</p>
     </footer>
     <script src="index.js"></script>
 </body>

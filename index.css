@@ -22,6 +22,19 @@ header{
     overflow: hidden;
     position: absolute;
 }
+.left-header{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.right-header{
+    flex: 1;
+    background-color: #5569dc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .navigation-bar{
     width: 100%;
     background-color: #5569dc;
@@ -41,6 +54,12 @@ a{
 .skill-text{
     min-width: 20vw;
     padding: 0.5rem;
+}
+.skill-text-backup{
+    padding: 0rem;
+    display: none;
+    margin: 0rem;
+    white-space: normal;
 }
 .progress-line{
     display: flex;
@@ -146,4 +165,235 @@ a{
     font-weight: 300;
     font-style: normal;
     font-size:medium;
+}
+#header-inroduction-text-container{
+    flex: 4;
+    color: white;
+    display:flex;
+}
+#header-inroduction-text-container-div-1{
+    flex: 1;
+}
+#header-inroduction-text-container-div-2{
+    flex: 5;
+}
+#background-image{
+    z-index: -1;
+    width: 75vw;
+    height: 100vh;
+    object-fit:cover;
+}
+#right-header-image{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10vh;
+}
+#right-header-email{
+    margin:3px;
+    margin-top: 5rem;
+}
+.section-style{
+    padding: 10vh 17vw;
+}
+.footer-style{
+    background-color: #5569dc;
+    margin: 0px;
+    padding: 2vh 17vw; 
+    color: white;
+}
+#fotter-action-div{
+    display: flex;
+}
+#fotter-link-buttons-1{
+    justify-self: end;
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+#fotter-link-buttons-2{
+    justify-self: end;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+#footer-hero-link{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+#footer-love-slogan{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+#footer-love-slogan-text{
+    line-height: 3rem;
+    color:#1c2349 ;
+    max-width: 17rem;
+}
+#footer-cv-button{
+    background-color: #5569dc;
+    color: white;
+    width: 10rem;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.skill-seperator{
+    min-width: 20vw;
+    padding: 0.5rem;
+}
+.skill-seperator-line{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 1px;
+    background-color: #cad4e8;
+    position: relative;
+    margin-right: 10px;
+}
+@media screen and (max-width: 1200px) {
+    .section-style{
+        padding: 10vh 10vw;
+    }
+    .footer-style{
+        padding: 2vh 10vw; 
+    }
+    #right-header-email{
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .right-header {
+        flex: 2;
+    }
+    .left-header{
+        flex: 5;
+    }
+}
+@media screen and (max-width: 850px) {
+    .right-header {
+        flex: 3;
+    }
+    .left-header{
+        flex: 6;
+    }
+}
+@media screen and (min-width: 801px){
+    #fotter-link-buttons-2{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    #fotter-link-buttons-1{
+        display: none;
+    }
+    #hero{
+        height: fit-content;
+    }
+    .header-content-container{
+        flex-direction: column;
+        position: relative;
+        height: 190vh;
+    }
+    .right-header {
+        height: 90vh;
+    }
+    .left-header{
+        height: 100vh;
+    }
+    #header-inroduction-text-container{
+        flex: 10;
+        flex-direction: column;
+    }
+    #header-inroduction-text-container-div-1{
+        flex:0;
+    }
+    #header-inroduction-text-container-div-2{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #background-image{
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    #right-header-image{
+        margin: 10px;
+    }
+    #right-header-name{
+        display: none;
+    }
+    #right-header-email{
+        margin-top: 1rem;
+    }
+    .section-style{
+        padding: 10vh 5vw;
+    }
+    .footer-style{
+        padding: 2vh 5vw; 
+        display: flex;
+        justify-content: center;
+    }
+    .skill-text{
+        max-width: 25vw;
+    }
+    #fotter-action-div{
+        flex-direction: column;
+    }
+    #footer-hero-link{
+        display: none;
+    }
+    #footer-love-slogan{
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer-love-slogan-text{
+        text-align: center;
+    }
+    #footer-cv-button{
+        margin-top: 2rem;
+    }
+    #footer-style-text{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .skill-text{
+        min-width: 0rem;
+        display: none;
+    }
+    .skill-text-backup{
+        min-width: 0rem;
+        display:block;
+        white-space: normal;
+    }
+    .progress-line{
+        width: 75vw;
+    }
+    .skill-seperator{
+        min-width:1vw;
+        padding: 0.5rem;
+    }
+    .skill-seperator-line{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 350px){
+    .progress-line{
+        width: 65%;
+    }
 }

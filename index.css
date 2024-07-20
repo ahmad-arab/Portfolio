@@ -391,6 +391,15 @@ a{
     .skill-seperator-line{
         width: 70%;
     }
+    .playfair-display-normal-1000 {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .font-size-80{
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 350px){
     .progress-line{

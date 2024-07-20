@@ -259,6 +259,11 @@ a{
     position: relative;
     margin-right: 10px;
 }
+#ahmad-arab-text{
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    padding: 0rem;
+}
 @media screen and (max-width: 1200px) {
     .section-style{
         padding: 10vh 10vw;
@@ -399,6 +404,9 @@ a{
     }
     .font-size-80{
         font-size: 50px;
+    }
+    #ahmad-arab-text{
+        text-align: center;
     }
 }
 @media screen and (max-width: 350px){
